@@ -155,7 +155,7 @@
         color: var(--czcionka);
         margin: 10px;
         text-decoration: none;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         transition: all 0.3 ease;
     }
     #contact a:hover{
