@@ -1,131 +1,112 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="color.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Igor Sobierajczyk</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="color.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-        <section id="welcome">
-            <div class="mess"><p>Hi!<br>My name is Igor and I'm Frontend Developer</p></div>
-            <div class="mess">
-                <img src="https://invoice.ng/blog/wp-content/uploads/2020/08/Tips-For-Creating-The-Perfect-Website-For-Your-Business.jpg" alt="">
+  <header class="nav">
+    <div class="logo">Igor<span style="font-size: 2vh;">Sobierajczyk</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">O mnie</a></li>
+        <li><a href="#projects">Projekty</a></li>
+        <li><a href="#skills">Umiejętności</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Cześć, jestem <span>Igor</span></h1>
+    <p>Frontend Developer ✨ Tworzę szybkie i piękne aplikacje</p>
+    <a href="#projects" class="btn">Zobacz projekty</a>
+  </section>
+
+  <section id="about" class="section">
+    <h2 class="section-head">O mnie</h2>
+    <p>Jaram się frontendem, UI/UX i tworzeniem dopracowanych aplikacji webowych. Mam doświadczenie w tworzeniu responsywnych stron internetowych od zera oraz za pomocą CMS - Wordpress.</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="section-head">Projekty</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Strona zbudowana w czystym HTML/CSS. Efekty hover, ciemny motyw.</p>
+        <a href="#" target="_blank">Zobacz</a>
+      </div>
+      <div class="project-card">
+        <h3>Coach Kognitywny</h3>
+        <p>Strona realizowana od początku do końca wedle zaleceń klientki. Pełna realizacja projektu: od stworzenia logo aż po postawienie strony na hostingu. Praca z użyciem Wordpress, bez użycia gotowych szablonów. Kalendarium, harmonogram, galerie (przygotowanych przez klientkę) zdjęć.</p>
+        <a href="http://martadomanska.pl" target="_blank">Zobacz</a>
+      </div>
+      <div class="project-card">
+        <h3>Kancelaria Radców Prawnych</h3>
+        <p>Strona zbudowana w czystym HTML/CSS. Realizacja całkowicie wedle zaleceń klientów. Pełna konfiguracja hostingu, realizacja strony internetowej oraz wsparcie techniczne.</p>
+        <a href="http://wmko.pl" target="_blank">Zobacz</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+        <h2 class="section-head">Umiejętności</h2>
+        <div class="skills-container">
+            <div class="skill-info">
+                <p><i class="fab fa-html5 fa-3x"></i></p>
+                <p class="skill-name">HTML5</p>
+                
             </div>
-        </section>
-        <section id="about">
-        <h1 class="section-head">About</h1>
-        <div class="about-container">
-            <div class="mess my-img">
-                <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="">
+            <div class="skill-info">
+                <p><i class="fab fa-css3 fa-3x"></i></p>
+                <p class="skill-name">CSS3</p>
+                
             </div>
-            <div class="mess my-information">
-                <p>I'm Igor</p>
-                <p>Frontend Developer</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis numquam adipisci tempore debitis quibusdam culpa maxime facere? Iusto, labore eos.</p>
+            <div class="skill-info">
+                <p><i class="fab fa-js fa-3x"></i></p>
+                <p class="skill-name">JavaScript</p>
+               
+            </div>
+           <!-- <div class="skill-info">
+                <p><i class="fab fa-react fa-3x"></i></p>
+                <p class="skill-name">React</p>
+                
+            </div>
+            <div class="skill-info">
+                <p><i class="fab fa-angular fa-3x"></i></p>
+                <p class="skill-name">Angular</p>
+                
+            </div>
+            <div class="skill-info">
+                <p><i class="fab fa-bootstrap fa-3x"></i></p>
+                <p class="skill-name">Bootstrap</p>
+                
+            </div>-->
+            <div class="skill-info">
+                <p><i class="fab fa-wordpress fa-3x"></i></p>
+                <p class="skill-name">WordPress</p>
+                
             </div>
         </div>
-        </section>
-        <section id="skills">
-            <h1 class="section-head">My skills</h1>
-            <div class="skills-container">
-                <div class="skill-info">
-                    <p><i class="fab fa-html5 fa-3x"></i></p>
-                    <p class="skill-name">HTML5</p>
-                    <p><progress value="95" max="100"></progress></p>
-                </div>
-                <div class="skill-info">
-                    <p><i class="fab fa-css3 fa-3x"></i></p>
-                    <p class="skill-name">CSS3</p>
-                    <p><progress value="95" max="100"></progress></p>
-                </div>
-                <div class="skill-info">
-                    <p><i class="fab fa-js fa-3x"></i></p>
-                    <p class="skill-name">JavaScript</p>
-                    <p><progress value="55" max="100"></progress></p>
-                </div>
-                <!--<div class="skill-info">
-                    <p><i class="fab fa-react fa-3x"></i></p>
-                    <p class="skill-name">React</p>
-                    <p><progress value="70" max="100"></progress></p>
-                </div>
-                <div class="skill-info">
-                    <p><i class="fab fa-angular fa-3x"></i></p>
-                    <p class="skill-name">Angular</p>
-                    <p><progress value="40" max="100"></progress></p>
-                </div>
-                <div class="skill-info">
-                    <p><i class="fab fa-bootstrap fa-3x"></i></p>
-                    <p class="skill-name">Bootstrap</p>
-                    <p><progress value="70" max="100"></progress></p>
-                </div>-->
-                <div class="skill-info">
-                    <p><i class="fab fa-wordpress fa-3x"></i></p>
-                    <p class="skill-name">WordPress</p>
-                    <p><progress value="80" max="100"></progress></p>
-                </div>
-            </div>
-        </section>
-        <section id="projects">
-            <h1 class="section-head">My projects</h1>
-            <div class="projects-container">
-                <div class="image-box">
-                    <a href="http://martadomanska.pl">
-                        <img src="martadomanska.pl" alt="">
-                        <div class="skill-name">Test</div>
-                    </a>
-                </div>
-                <div class="image-box">
-                    <a href="http://wmko.pl">
-                        <img src="https://s3-ap-south-1.amazonaws.com/static.awfis.com/wp-content/uploads/2017/07/07184649/ProjectManagement.jpg" alt="">
-                        <div class="skill-name">Test</div>
-                    </a>
-                </div>
-                <div class="image-box">
-                    <a href="#">
-                        <img src="https://s3-ap-south-1.amazonaws.com/static.awfis.com/wp-content/uploads/2017/07/07184649/ProjectManagement.jpg" alt="">
-                        <div class="skill-name">Test</div>
-                    </a>
-                </div>
-                <div class="image-box">
-                    <a href="#">
-                        <img src="https://s3-ap-south-1.amazonaws.com/static.awfis.com/wp-content/uploads/2017/07/07184649/ProjectManagement.jpg" alt="">
-                        <div class="skill-name">Test</div>
-                    </a>
-                </div>
-                <div class="image-box">
-                    <a href="#">
-                        <img src="https://s3-ap-south-1.amazonaws.com/static.awfis.com/wp-content/uploads/2017/07/07184649/ProjectManagement.jpg" alt="">
-                        <div class="skill-name">Test</div>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <h1 class="section-head">Contact</h1>
-            <p>Find me on:</p>
-            <p>
-                <!--<a href="#"><i class="fab fa-linkedin fa-2x"> Linkedin</i></a>-->
-                <a href="#"><i class="fab fa-github-square fa-2x"> Github</i></a>
-                <a href="#"><i class="fas fa-envelope-square fa-2x"> E-mail</i></a>
-            </p>
-        </section>
-    
+    </section>
+    <footer>
+    <section id="contact" class="section">
+        <h2 class="section-head">Kontakt</h2>
+        <p>Find me on:</p>
+        <p>
+            <!--<a href="#"><i class="fab fa-linkedin fa-2x"> Linkedin</i></a>-->
+            <a href="#"><i class="fab fa-github-square fa-2x"> Github</i></a>
+            <a href="#"><i class="fas fa-envelope-square fa-2x"> E-mail</i></a>
+        </p>
+    </section>
+
+   
+    <p>&copy; 2025 Igor Sobierajczyk. Wszelkie prawa zastrzeżone.</p>
+    </footer>
 </body>
 </html>

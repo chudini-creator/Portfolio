@@ -1,7 +1,8 @@
 :root{
-    --czcionka: #1e1e2f;
-    --tlo: #fff;
+    --czcionka: #fff;
+    --tlo: #0d0d14;
+    --transparent: rgba(0 , 0, 0, 0.9);
     --glow: rgba(21, 168, 209, 0.8);
-    --blue: #857ce7;
+    --blue: #00ffcc;
     
 }
