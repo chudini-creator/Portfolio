@@ -25,11 +25,11 @@
         z-index: 1000;
     }
     .logo {
-        font-size: 1.5rem;
+        font-size: 2.5vh;
         font-weight: bold;
     }
     .logo span {
-        color: #00ffcc;
+        color: var(--blue);
     }
     .nav-links {
         display: flex;
@@ -44,7 +44,13 @@
         transition: color 0.3s ease;
     }
     .nav-links a:hover {
-        color: #00ffcc;
+        color: var(--blue);
+    }
+    .hamburger {
+        color: var(--blue);
+        display: none;
+        font-size: 1.5rem;
+        cursor: pointer;
     }
     /*HERO*/
     .hero {
@@ -146,10 +152,15 @@
         padding: 1rem;
     }
     #contact a{
-        color: var(--blue);
+        color: var(--czcionka);
         margin: 10px;
         text-decoration: none;
-        font-size: 2vh;
+        font-size: 0.7rem;
+        transition: all 0.3 ease;
+    }
+    #contact a:hover{
+        transition: all 0.3s ease;
+        color: var(--blue);
     }
     footer {
         text-align: center;
@@ -157,4 +168,33 @@
         background: #111;
         font-size: 0.9rem;
     }
+
+    
+      @media (max-width: 768px) {
+        .nav-links {
+          position: absolute;
+          top: 70px; /* dostosuj zależnie od wysokości nav */
+          right: 0;
+          background-color: #111;
+          flex-direction: column;
+          width: 200px;
+          display: none;
+          padding: 1rem;
+          gap: 1rem;
+        }
+      
+        .nav-links.active {
+          display: flex;
+        }
+      
+        .hamburger {
+          display: block;
+        }
+        .hero h1{
+            font-size: 2.5rem;
+        }
+        .hero .btn{
+            margin-top: 1rem;
+        }
+      }
   
