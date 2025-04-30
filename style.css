@@ -173,7 +173,7 @@
       @media (max-width: 768px) {
         .nav-links {
           position: absolute;
-          top: 70px; /* dostosuj zależnie od wysokości nav */
+          top: 70px;
           right: 0;
           background-color: #111;
           flex-direction: column;
@@ -195,6 +195,9 @@
         }
         .hero .btn{
             margin-top: 1rem;
+        }
+        .skill-info{
+            opacity: 1;
         }
       }
   
